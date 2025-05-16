@@ -4,6 +4,8 @@ import Booking from "../pages/BookingPage";
 import ConfirmedBooking from "./ConfirmedBooking";
 import Header from "./Header";
 import Nav from "./Nav";
+import Homepage from "../pages/Homepage";
+import Footer from "./Footer";
 
 
 const Main = () => {
@@ -55,10 +57,11 @@ const Main = () => {
         <main className="main">
           <Nav />
             <Routes>
-                <Route path="/" element={<Header />} />
+                <Route path="/" element={<Homepage />} />
                 <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
                 <Route path="/confirmed" element={<ConfirmedBooking/> } />
             </Routes>
+            <Footer />
         </main>
 
 
