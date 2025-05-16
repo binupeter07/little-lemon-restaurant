@@ -65,36 +65,6 @@ nav ul li a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-links.visible {
-    display: flex;
-    background: #333333;
-    z-index: 1000;
-    padding: 20px 0;
-  }
-
-  .navbar {
-    background: #fff;
-    padding: 10px 8%;
-  }
-
-  nav ul li a {
-    color: #fff;
-  }
-
-  .bar {
-    background: #333333;
-  }
-}
-
 .header {
   padding: 40px 0;
   background-color: #495e57;
@@ -147,3 +117,84 @@ button {
   height: 400px;
   border-radius: 20px;
 }
+
+form, .comfirm{
+  padding: 10px 13%;
+}
+
+.formField{
+  padding: 50px 20px;
+}
+
+input, label{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#book-date, #book-time, #book-guests, #book-occasion{
+  background: #bdbdbd43;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+.btnReceive input{
+  padding: 12px 16px;
+  margin-top: 20px;
+  background: #495e57;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+
+}
+.confirm{
+   padding: 10px 13%;
+
+}
+
+.confirm span{
+  color: blue;
+}
+
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.visible {
+    display: flex;
+    background: #333333;
+    z-index: 1000;
+    padding: 20px 0;
+  }
+
+  .navbar {
+    background: #fff;
+    padding: 10px 8%;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .bar {
+    background: #333333;
+  }
+
+  .header section, .menu-container{
+    padding: 10px 8%;
+  }
+
+  .right-section{
+    display: none;
+  }
+}
+
+
